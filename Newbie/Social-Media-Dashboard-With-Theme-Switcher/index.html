@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row first-row">
+      <div class="col-lg-6">
+        <h5 class="social-media-text">Social Media Dashboard</h5>
+        <h6 class="total-followers">Total Followers: 23,004</h6>
+      </div>
+      <hr>
+      <div class="col-lg-6 d-flex flex-row-reverse align-self-center">
+        <div class="view-mode-text">
+          <span class="view-mode-value">Dark Mode</span>
+          <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+            <label class="custom-control-label" for="customSwitch1"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cards-container">
+
+      <div class="row second-row justify-content-between">
+
+        <div class="col-lg col-lg-dark facebook-followers">
+          <img class="social-icon" src="images/icon-facebook.svg" alt="icon-facebook">
+          <p class="user_id">@nathanf</p>
+          <h1 class="followers">1987</h1>
+          <p class="followers-text">F O L L O W E R S</p>
+          <img class="arrow-icon" src="images/icon-up.svg" alt="icon-up">
+          <p class="daily-numbers green">12 Today</p>
+        </div>
+
+        <div class="col-lg col-lg-dark twitter-followers">
+          <img class="social-icon" src="images/icon-twitter.svg" alt="icon-twitter">
+          <p class="user_id">@nathanf</p>
+          <h1 class="followers">1044</h1>
+          <p class="followers-text">F O L L O W E R S</p>
+          <img class="arrow-icon" src="images/icon-up.svg" alt="icon-up">
+          <p class="daily-numbers green">99 Today</p>
+        </div>
+
+        <div class="col-lg col-lg-dark instagram instagram-followers-dark">
+          <img class="social-icon" src="images/icon-instagram.svg" alt="icon-instagram">
+          <p class="user_id">@realnathanf</p>
+          <h1 class="followers">11k</h1>
+          <p class="followers-text">F O L L O W E R S</p>
+          <img class="arrow-icon" src="images/icon-up.svg" alt="icon-up">
+          <p class="daily-numbers green">1099 Today</p>
+        </div>
+
+        <div class="col-lg col-lg-dark youtube-subscribers">
+          <img class="social-icon" src="images/icon-youtube.svg" alt="icon-youtube">
+          <p class="user_id">Nathan F.</p>
+          <h1 class="followers">8239</h1>
+          <p class="followers-text">S U B S C R I B E R S</p>
+          <img class="arrow-icon" src="images/icon-down.svg" alt="icon-down">
+          <p class="daily-numbers red">144 Today</p>
+        </div>
+      </div>
+
+      <div class="row third-row  justify-content-between">
+
+        <div class="col overview-today">
+          Overview - Today
+        </div>
+
+      </div>
+
+      <div class="row fourth-row justify-content-between">
+
+        <div class="col-lg col-lg-dark">
+
+          <div class="d-flex justify-content-between">
+            <p class="social-information-status">Page Views</p>
+            <img class="social-icon" src="images/icon-facebook.svg" alt="icon-facebook">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h4 class="social-information-value">87</h4>
+            <div>
+              <img class="social-information-arrow" src="images/icon-up.svg" alt="icon-up">
+              <span class="social-information-percentage green">3%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-lg-dark">
+          <div class="d-flex justify-content-between">
+            <p class="social-information-status">Likes</p>
+            <img class="social-icon" src="images/icon-facebook.svg" alt="icon-facebook">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h4 class="social-information-value">52</h4>
+            <div>
+              <img class="social-information-arrow" src="images/icon-down.svg" alt="icon-down">
+              <span class="social-information-percentage red">2%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-lg-dark">
+          <div class="d-flex justify-content-between">
+            <p class="social-information-status">Likes</p>
+            <img class="social-icon" src="images/icon-instagram.svg" alt="icon-instagram">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h4 class="social-information-value">5462</h4>
+            <div>
+              <img class="social-information-arrow" src="images/icon-up.svg" alt="icon-up">
+              <span class="social-information-percentage green">2257%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-lg-dark">
+          <div class="d-flex justify-content-between">
+            <p class="social-information-status">Profile Views</p>
+            <img class="social-icon" src="images/icon-instagram.svg" alt="icon-instagram">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h4 class="social-information-value">52k</h4>
+            <div>
+              <img class="social-information-arrow" src="images/icon-up.svg" alt="icon-up">
+              <span class="social-information-percentage green">1375%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row fifth-row justify-content-between">
+
+        <div class="col-lg col-lg-dark">
+
+          <div class="d-flex justify-content-between">
+            <p class="social-information-status">Retweets</p>
+            <img class="social-icon" src="images/icon-twitter.svg" alt="icon-twitter">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h4 class="social-information-value">117</h4>
+            <div>
+              <img class="social-information-arrow" src="images/icon-up.svg" alt="icon-up">
+              <span class="social-information-percentage green">303%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-lg-dark">
+          <div class="d-flex justify-content-between">
+            <p class="social-information-status">Likes</p>
+            <img class="social-icon" src="images/icon-twitter.svg" alt="icon-twitter">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h4 class="social-information-value">507</h4>
+            <div>
+              <img class="social-information-arrow" src="images/icon-up.svg" alt="icon-up">
+              <span class="social-information-percentage green">553%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-lg-dark">
+          <div class="d-flex justify-content-between">
+            <p class="social-information-status">Likes</p>
+            <img class="social-icon" src="images/icon-youtube.svg" alt="icon-youtube">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h4 class="social-information-value">107</h4>
+            <div>
+              <img class="social-information-arrow" src="images/icon-down.svg" alt="icon-down">
+              <span class="social-information-percentage red">19%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg col-lg-dark">
+          <div class="d-flex justify-content-between">
+            <p class="social-information-status">Total Views</p>
+            <img class="social-icon" src="images/icon-youtube.svg" alt="icon-youtube">
+          </div>
+          <div class="d-flex justify-content-between">
+            <h4 class="social-information-value">1407</h4>
+            <div>
+              <img class="social-information-arrow" src="images/icon-down.svg" alt="icon-down">
+              <span class="social-information-percentage red">12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/XaFaK-01">XaFaK</a>.
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="javascript/app.js"></script>
+</body>
+
+</html>

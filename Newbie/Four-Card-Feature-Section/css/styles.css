@@ -1,0 +1,127 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  top: 10rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 98%);
+
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.first_heading {
+  font-weight: normal;
+  line-height: 0;
+}
+
+.third_heading {
+  font-size: medium;
+  font-weight: normal;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.top_container {
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  /*this means that if this gets at this certain point it'll follow the following instructions or else the following statements will be ignored*/
+  .cards_container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .card {
+    height: 100%;
+    flex-basis: 25%;
+  }
+
+  .card .card-inner {
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card:nth-child(2) {
+    /*for changing the width and height of team_builder_container*/
+  }
+
+  .card:nth-child(4) {
+  }
+}
+
+.container_lower_part_all_cards {
+  position: relative;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.specified_icon {
+  position: relative;
+  top: 70%;
+  left: 31%;
+}
+
+/* supervisor_container specifications*/
+
+.supervisor_container {
+  border-top: solid 7px;
+  border-top-color: hsl(180, 62%, 55%);
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+  margin-right: 30px;
+  transform: translateY(50%);
+}
+
+/* teambuilder_container specifications*/
+
+.teambuilder_container {
+  border-top: solid 7px;
+  border-top-color: hsl(0, 78%, 62%);
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+}
+
+/* karma_container specifications*/
+
+.karma_container {
+  border-top: solid 7px;
+  border-top-color: hsl(34, 97%, 64%);
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+  transform: translateY(20%);
+  order: 4;
+}
+
+/* calculator_container specifications*/
+
+.calculator_container {
+  border-top: solid 7px;
+  border-top-color: hsl(212, 86%, 64%);
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+  transform: translateY(46%);
+  margin-left: 30px;
+  order: 1;
+}

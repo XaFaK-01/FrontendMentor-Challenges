@@ -1,0 +1,256 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(0, 100%, 98%);
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-image: url(../images/icon-arrow.svg); /* fallback */
+  background-image: url(../images/icon-arrow.svg),
+    linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 74%, 74%));
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: 2px 15px 30px lightgrey;
+}
+
+.container-fluid {
+  /* padding: 60px; */
+}
+
+#emailHelp {
+  padding-left: 30px;
+}
+
+.form-group {
+  position: absolute;
+  width: 26vw;
+  z-index: 0;
+}
+
+.form-control::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.form-control:focus {
+  background-color: hsl(0, 100%, 98%);
+  border: solid 3px hsl(0, 93%, 68%);
+  box-shadow: none;
+}
+
+footer {
+  margin: 40px auto 10px auto;
+  text-align: center;
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+h1 {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+  letter-spacing: 1rem;
+}
+
+.icon-error-invisible {
+  display: none;
+}
+
+p {
+  color: hsl(0, 36%, 70%);
+  line-height: 180%;
+}
+
+small {
+  color: hsl(0, 36%, 70%);
+  font-weight: 600;
+}
+
+span {
+  color: hsl(0, 6%, 24%);
+  font-weight: 600;
+}
+
+/* desktop */
+@media (min-width: 991.98px) {
+  .btn {
+    background-image: url(../images/icon-arrow.svg); /* fallback */
+    background-image: url(../images/icon-arrow.svg),
+      linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: none;
+    border-radius: 50rem;
+    display: inline-block;
+    height: 57px;
+    left: 40%;
+    width: 100px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .email_form {
+    display: inline-block;
+    margin: 3% auto;
+  }
+
+  form {
+    width: 59vw;
+  }
+
+  .form-control {
+    background-color: hsl(0, 100%, 98%);
+    border-radius: 50rem;
+    font-weight: 600;
+    height: 3.5rem;
+    padding-left: 30px;
+  }
+
+  .form-group {
+    width: 27vw;
+  }
+
+  .text-container {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-top: 3.5%;
+  }
+
+  h1 {
+    font-size: 4vw;
+    line-height: 110%;
+    margin-top: 20%;
+  }
+
+  .icon-error-visible {
+    bottom: 48%;
+    display: inline-block;
+    left: 21vw;
+    position: absolute;
+  }
+
+  .model-desktop {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .model-mobile {
+    display: none;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-top: 23px;
+    width: 27rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 991.98px) {
+  body {
+    text-align: center;
+  }
+
+  .btn {
+    background-image: url(../images/icon-arrow.svg); /* fallback */
+    background-image: url(../images/icon-arrow.svg),
+      linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: none;
+    border-radius: 50rem;
+    display: inline-block;
+    height: 49px;
+    left: 40%;
+    width: 66px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .container-fluid {
+    padding-left: 0;
+  }
+
+  .email_form {
+    display: inline-block;
+    margin: 2rem auto 0 auto;
+  }
+
+  form {
+    width: 76vw;
+  }
+
+  .form-control {
+    background-color: hsl(0, 100%, 98%);
+    border-radius: 50rem;
+    font-weight: 600;
+    height: 3rem;
+    padding-left: 30px;
+    width: 90%;
+  }
+
+  .form-group {
+    width: 76vw;
+  }
+
+  h1 {
+    font-size: 8vw;
+    line-height: 120%;
+    margin-top: 10%;
+  }
+
+  .icon-error-visible {
+    bottom: 2.6rem;
+    display: inline-block;
+    left: 13vw;
+    position: relative;
+  }
+
+  .logo {
+    align-items: flex-start;
+    display: block;
+    margin-left: 20px;
+    margin-top: 8%;
+    width: 30%;
+  }
+
+  .model-mobile {
+    display: flex;
+    padding: 0;
+    margin: 8% auto 0 auto;
+    width: 100%;
+  }
+
+  .model-desktop-container {
+    display: none;
+  }
+
+  p {
+    font-size: 3.5vw;
+    margin: 23px auto 0 auto;
+    width: 75vw;
+  }
+
+  .text-container {
+    background-image: none;
+    box-sizing: border-box;
+    padding-right: 0;
+  }
+}

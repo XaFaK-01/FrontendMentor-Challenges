@@ -1,0 +1,190 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-fluid {
+    background-image: url(../images/pattern-curve.svg);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: bottom;
+    height: 100%;
+    width: 100%;
+}
+
+.inner-container-text {
+    background-image: url(../images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 23%;
+    background-position-y: 0;
+}
+
+.inner-container-text p {
+    font-weight: 300;
+    color: hsl(240, 38%, 20%);
+}
+
+.developer-name {
+    font-weight: 700;
+    color: hsl(240, 38%, 20%);
+}
+
+.developer-occupation {
+    color: hsl(240, 18%, 77%);
+    font-weight: 500;
+}
+
+.picture-div {
+    padding: 1.5rem 0 0 0;
+}
+
+
+.inner-container-image {
+    background-image: url(../images/pattern-bg.svg);
+    background-repeat: no-repeat;
+}
+
+.inner-container-image .developer-image {
+    border-radius: 7px;
+}
+
+.navigation-buttons {
+    background-color: #fff;
+    border-radius: 50rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttons {
+    display: inline-block;
+}
+
+.btn-right {
+    margin-left: 2px;
+}
+
+/* Desktop */
+@media (min-width: 991.98px) {
+
+    .text-div {
+        padding: 14.5% 0 10% 12%;
+        z-index: 1;
+    }
+
+    .developer-name,
+    .developer-occupation {
+        display: inline-block;
+    }
+
+    .inner-container-text p {
+        font-size: 200%;
+        padding-top: 4rem;
+        width: 39rem;
+    }
+
+    .picture-div {
+        z-index: 0;
+    }
+
+    .inner-container-image {
+        background-position: 50%;
+        height: 100%;
+        position: relative;
+        right: 60px;
+        top: 20px;
+    }
+
+    .inner-container-image .developer-image {
+        width: 34rem;
+        position: absolute;
+        top: 47.5%;
+        left: 45%;
+        margin-top: -250px;
+        margin-left: -250px;
+    }
+
+    .navigation-buttons {
+        width: 7rem;
+        height: 3.5rem;
+        position: absolute;
+        top: 85%;
+        left: 18%;
+    }
+
+    .buttons {
+        padding: 20px;
+    }
+
+}
+
+
+
+/* Mobile */
+@media (max-width: 991.98px) {
+
+    html,
+    body {
+        text-align: center;
+    }
+
+    .text-div {
+        padding: 5%;
+        order: 2;
+    }
+
+    .inner-container-text {
+        background-size: 20%;
+        background-position-x: 50%;
+    }
+
+    .inner-container-text p {
+        font-size: 118%;
+        padding-top: 2.8rem;
+    }
+
+    .developer-name,
+    .developer-occupation {
+        font-size: 1rem;
+    }
+
+    .picture-div {
+        order: 1;
+    }
+
+    .inner-container-image {
+        background-position: center;
+        background-size: auto 100%;
+    }
+
+    .inner-container-image .developer-image {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .navigation-buttons {
+        width: 5rem;
+        height: 2.3rem;
+        position: absolute;
+        top: 85%;
+        left: 40%;
+    }
+
+    .buttons {
+        width: 10px;
+        margin-top: 10px;
+    }
+
+    .btn-left {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 info_container">
+          <h1>
+            Learn to code by watching others
+          </h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="col-lg-6 info_fill_container">
+          <div class="try_it_free try_it_free_heading">
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </div>
+          <div class="try_it_free try_it_free_form_fill">
+            <form id="form_email">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First Name"
+                />
+                <img
+                  class="error_icon icon-error-invisible"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+                <small class="error_message form-text-invisible">
+                  <em>First Name cannot be empty</em>
+                </small>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last Name"
+                />
+                <img
+                  class="error_icon icon-error-invisible"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+                <small class="error_message form-text-invisible"
+                  ><em>Last Name cannot be empty</em></small
+                >
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                />
+                <img
+                  class="error_icon icon-error-invisible"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+                <small class="error_message form-text-invisible"
+                  ><em>Looks like this not an email</em></small
+                >
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <img
+                  class="error_icon icon-error-invisible"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+                <small class="error_message form-text-invisible"
+                  ><em>Password cannot be empty</em></small
+                >
+              </div>
+              <button type="button" class="btn btn-success btn-lg btn-block">
+                CLAIM YOUR FREE TRAIL
+              </button>
+              <small class="form-text"
+                >By clicking the button, you are agreeing to our
+                <a href=""><span>Terms and Services</span></a>
+              </small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/index.js"></script>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/XaFaK-01">XaFaK</a>.
+      </p>
+    </footer>
+  </body>
+</html>

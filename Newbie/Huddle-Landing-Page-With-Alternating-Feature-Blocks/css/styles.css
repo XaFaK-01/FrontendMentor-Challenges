@@ -1,0 +1,278 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: hsl(192, 100%, 9%);
+}
+
+/* Introductory */
+
+.logo {
+  width: 11rem;
+}
+
+.container-fluid {
+  margin-bottom: 2%;
+}
+.introductory_division {
+}
+
+.introductory_items {
+  padding: 2rem;
+}
+
+.introductory_button_1 {
+  background-color: #fff;
+  border-radius: 2rem;
+  /* box-shadow: 1px 3px 10px lightgray, -1px 0px 10px lightgray; */
+  box-shadow: 1px 3px 10px rgba(105, 105, 105, 0.1),
+    -1px 0px 10px rgba(105, 105, 105, 0.1);
+  color: hsl(192, 100%, 9%);
+
+  display: inline-block;
+  float: right;
+
+  padding: 1% 4.2%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0 2px 2px 0;
+  border: 0;
+}
+
+.introductory_button_2 {
+  background-color: hsl(322, 100%, 66%);
+  border-radius: 2rem;
+  box-shadow: 1px 3px 10px rgba(105, 105, 105, 0.1),
+    -1px 0px 10px rgba(105, 105, 105, 0.1);
+  color: #fff;
+  padding: 2.3% 9%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 6px 0px;
+}
+
+.introductory_image {
+  width: 95%;
+  display: inline-block;
+  float: right;
+}
+
+.introductory_items h1 {
+  margin-top: 13%;
+}
+
+.introductory_items p {
+  margin-top: 33px;
+}
+
+/* Illustration Section */
+
+.defined_container {
+  width: 94%;
+  /* height: 30%; */
+  box-shadow: 1px 3px 10px rgba(105, 105, 105, 0.1),
+    -1px 0px 10px rgba(105, 105, 105, 0.1);
+  margin: 2% 3% 3% 3%;
+  /* padding: 3%; */
+  border-radius: 0.5rem;
+}
+
+.illustration_images_left,
+.illustration_images_right {
+  width: 80%;
+  display: inline-block;
+}
+
+@media (max-width: 991.98px) {
+  .introductory_section {
+    background-image: url(../images/bg-hero-mobile.svg);
+    padding: 1rem 0.2%;
+    background-color: hsl(193, 100%, 96%);
+  }
+
+  .defined_container {
+    text-align: center;
+  }
+
+  .illustration_section {
+    padding: 8rem 0.2%;
+    background-color: #fff;
+  }
+
+  .illustration_images_right,
+  .illustration_images_left {
+    width: 70%;
+  }
+
+  .illustration_image {
+    order: 1;
+    padding: 10% 0;
+  }
+
+  .illustration_text {
+    order: 2;
+    padding: 5% 10%;
+    margin: 0;
+  }
+
+  .company_details_container {
+    margin: 60px 0 0 0;
+    line-height: 200%;
+  }
+
+  .copyright_text {
+    text-align: center;
+  }
+
+  .social_icons {
+    text-align: center;
+  }
+
+  .footer_container {
+    background-color: hsl(192, 100%, 9%);
+    position: absolute;
+    color: #fff;
+    padding: 18% 2% 2% 3%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .bottom_container {
+    text-align: center;
+    width: 65%;
+    box-shadow: 1px 0px 2px rgba(105, 105, 105, 0.1),
+      -1px 0px 2px rgba(105, 105, 105, 0.1);
+    margin: 20px auto -5% auto;
+    padding: 3%;
+    border-radius: 0.5rem;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .bottom_container h2 {
+    font-size: 130%;
+  }
+
+  .bottom_container button {
+    margin-top: 2rem;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .introductory_section {
+    background-image: url(../images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    padding: 1rem 2rem;
+    background-color: hsl(193, 100%, 96%);
+  }
+
+  .illustration_section {
+    padding: 8rem 2rem;
+    background-color: #fff;
+  }
+
+  .illustration_images_right {
+    float: right;
+  }
+  .illustration_images_left {
+    float: left;
+  }
+
+  .illustration_text {
+    padding: 12% 10%;
+  }
+
+  .illustration_image {
+    padding: 5% 3%;
+  }
+
+  .company_details_container {
+    margin: -2px 0 0 15%;
+    line-height: 200%;
+  }
+
+  .copyright_text {
+    text-align: right;
+    margin-top: 2%;
+  }
+
+  .footer_container {
+    background-color: hsl(192, 100%, 9%);
+    position: absolute;
+    color: #fff;
+    padding: 12% 7% 2% 7%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .bottom_container {
+    text-align: center;
+    width: 50%;
+    box-shadow: 1px 0px 2px rgba(105, 105, 105, 0.1),
+      -1px 0px 2px rgba(105, 105, 105, 0.1);
+    margin: 20px auto -5% auto;
+    padding: 3%;
+    border-radius: 0.5rem;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .bottom_container h2 {
+    font-size: 178%;
+  }
+
+  .bottom_container button {
+    margin-top: 2rem;
+    font-size: 20px;
+  }
+}
+
+/* Bottom Container */
+
+footer {
+  position: 0;
+  color: #fff;
+}
+
+/* Contact Details */
+
+.contact_details_container {
+  margin-top: 60px;
+}
+
+.icon {
+  padding: 0 0 0 6px;
+}
+
+/* Company Details */
+
+/* Social Icons */
+.social_icons {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

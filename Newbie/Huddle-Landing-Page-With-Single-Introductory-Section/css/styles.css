@@ -1,0 +1,155 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: black;
+}
+
+.author {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  line-height: 150%;
+  margin-top: 23%;
+}
+
+/* Introductory */
+
+.logo {
+  display: inline-block;
+  float: left;
+  width: 11rem;
+}
+
+.mockups-image {
+  width: 100%;
+}
+
+.container-fluid {
+  /* margin-bottom: 1%; */
+}
+
+.register_button {
+  background-color: #fff;
+  border: 0;
+  border-radius: 2rem;
+  box-shadow: 0px 2px 12px rgba(46, 49, 49, 1);
+  color: hsl(257, 40%, 49%);
+  font-size: 15px;
+  font-weight: 700;
+  margin: 6px 2px 2px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.about_huddle {
+  margin-top: 27px;
+}
+
+.fab_inner_container {
+  display: inline-block;
+  padding: 6px;
+}
+
+.fab {
+  color: #fff;
+}
+.fab_icons {
+  border: solid #fff;
+  border-width: 1.5px;
+  border-radius: 100%;
+  display: inline-block;
+  font-size: medium;
+  width: 30px;
+}
+
+.facebook {
+  padding: 7px 24px 7px 14px;
+}
+
+.twitter {
+  padding: 7px 26px 7px 12px;
+}
+
+.instagram {
+  padding: 7px 26px 7px 12px;
+}
+
+/* Specifications for desktop viewport  */
+
+@media (min-width: 991.98px) {
+  .container-fluid {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: 100% 100%;
+    padding: 1rem 3rem 3.3rem 3rem;
+    margin: 0;
+  }
+  .fab_container {
+    display: inline-block;
+    float: right;
+    margin-top: 40%;
+  }
+  h1 {
+    font-weight: 700;
+    max-width: 30rem;
+  }
+
+  .logo {
+    margin-bottom: 4rem;
+  }
+  .register_button {
+    padding: 2.4% 10%;
+  }
+
+  .introductory_items {
+    padding: 2rem;
+  }
+}
+/* Specifications for mobile viewport */
+
+@media (max-width: 991.98px) {
+  .container-fluid {
+    padding: 0 0.2%;
+  }
+
+  .introductory_items_first {
+    background-image: url(../images/bg-mobile.svg);
+    background-size: 100% 100%;
+  }
+  body {
+    text-align: center;
+  }
+
+  .fab_container {
+    margin-top: 40%;
+  }
+  h1 {
+    min-width: 15%;
+    font-size: 180%;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  .logo {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .register_button {
+    margin-top: 10px;
+    padding: 2.8% 22%;
+  }
+  .introductory_items {
+    padding: 1rem 4rem;
+  }
+}

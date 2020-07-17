@@ -1,0 +1,351 @@
+/*Specs for switch*/
+
+.custom-switch .custom-control-label::before {
+    left: -0.4rem;
+    width: 2.86rem;
+    height: 24px;
+    pointer-events: all;
+    border-radius: 2.5rem;
+}
+
+.custom-control-label::before {
+    position: absolute;
+    top: -3px;
+    left: -20px;
+    display: block;
+    height: 1.5rem;
+    pointer-events: none;
+    content: "";
+    border: solid 1px;
+    border-radius: 3rem;
+    border-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: hsl(230, 22%, 74%);
+    background-color: hsl(230, 22%, 74%);
+    background: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
+
+}
+
+.custom-control-input:checked~.custom-control-label::after {
+    color: #fff;
+    border-color: #007bff;
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+    -webkit-transform: translateX(.75rem);
+    transform: translateX(1.35rem);
+}
+
+.custom-switch .custom-control-label::after {
+    top: calc(.25rem + -4px);
+    left: calc(-0.5rem + 4px);
+    width: calc(1.22rem - 2px);
+    height: calc(1.22rem - 2px);
+    background-color: hsl(228, 28%, 20%);
+    border-radius: .5rem;
+    transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+    transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+}
+
+/*End specs for toggle switch*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(230, 17%, 14%);
+}
+
+.row {
+    margin: 0;
+}
+
+.first-row .total-followers {
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    font-size: 0.845rem;
+    margin-top: -5px;
+    letter-spacing: 0.5px;
+}
+
+.col-lg-white:hover {
+    background:
+        linear-gradient(to right, hsl(227, 17%, 90%), hsl(227, 17%, 90%)),
+        linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.col-lg-dark:hover {
+    background:
+        linear-gradient(to right, hsl(228, 28%, 26%), hsl(228, 28%, 26%)),
+        linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+
+.social-icon,
+.user_id {
+    display: inline-block;
+}
+
+.facebook-followers {
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.twitter-followers {
+    border-top: 5px solid hsl(203, 89%, 53%)
+}
+
+.instagram-followers-white {
+    border-image-slice: 1;
+    border-top: 5px solid transparent;
+    border-radius: 7px;
+    background:
+        linear-gradient(to right, hsl(227, 47%, 96%), hsl(227, 47%, 96%)),
+        linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.instagram-followers-dark {
+    border-image-slice: 1;
+    border-top: 5px solid transparent;
+    border-radius: 7px;
+    background:
+        linear-gradient(to right, hsl(228, 28%, 20%), hsl(228, 28%, 20%)),
+        linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.youtube-subscribers {
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.user_id {
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.followers {
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+.followers-text {
+    color: hsl(228, 34%, 66%);
+    font-weight: lighter;
+    margin-top: -10px;
+    font-size: 0.82rem;
+}
+
+.arrow-icon,
+.daily-numbers {
+    display: inline-block;
+    font-size: 0.5rem;
+}
+
+.daily-numbers {
+    color: hsl(230, 22%, 74%);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.overview-today {
+    margin-top: 1.4rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.fourth-row .col-lg,
+.fifth-row .col-lg {
+    background-color: hsl(228, 28%, 20%);
+    margin: 1rem;
+    padding: 1.8rem 2rem 0.4rem 1.5rem;
+    border-radius: 5px
+}
+
+.social-information-status {
+    color: hsl(230, 22%, 74%);
+    font-weight: 700;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.social-information-value,
+.social-information-arrow,
+.social-information-percentage {
+    display: inline-block;
+}
+
+.social-information-value {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.social-information-arrow {
+    height: 5px;
+    width: 10px;
+}
+
+.social-information-percentage {
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-top: 28px;
+}
+
+.green {
+    color: hsl(163, 72%, 41%);
+}
+
+.red {
+    color: hsl(356, 69%, 56%);
+}
+
+/* desktop */
+@media (min-width: 991.98px) {
+    .first-row {
+        background-color: hsl(232, 19%, 15%);
+        position: relative;
+        padding: 2.3rem 10.5% 9rem 10.5%;
+        margin: 0;
+        border-bottom: 10px solid hsl(232, 19%, 15%);
+        border-bottom-left-radius: 1.8rem;
+        border-bottom-right-radius: 1.8rem;
+    }
+
+    .view-mode-value {
+        color: hsl(228, 34%, 66%);
+    }
+
+
+    .view-mode-text,
+    .custom-switch {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 0.85rem;
+        padding-right: 20px;
+        padding-left: 17px;
+    }
+
+    .first-row .social-media-text {
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
+
+
+    .cards-container {
+        position: relative;
+        bottom: 8.8rem;
+        padding: 12px 10.5% 0 10.5%
+    }
+
+    .second-row .col-lg {
+        background-color: hsl(228, 28%, 20%);
+        margin: 1rem;
+        text-align: center;
+        padding: 1.4rem 0 7px 0;
+        border-radius: 5px
+    }
+
+    .view-mode-text,
+    .custom-switch {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 0.85rem;
+        padding-right: 20px;
+
+    }
+
+    hr {
+        border-top: 0.5px solid grey;
+        width: 90%;
+        display: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 991.98px) {
+    .first-row {
+        background-color: hsl(232, 19%, 15%);
+        position: relative;
+        padding: 2.3rem 3.3% 9rem 3.3%;
+        margin: 0;
+        border-bottom: 10px solid hsl(232, 19%, 15%);
+        border-bottom-left-radius: 1.8rem;
+        border-bottom-right-radius: 1.8rem;
+    }
+
+
+    .first-row .social-media-text {
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+
+    .cards-container {
+        position: relative;
+        bottom: 8.8rem;
+        padding: 12px 3.3% 0 3.3%;
+    }
+
+    .second-row .col-lg {
+        background-color: hsl(228, 28%, 20%);
+        margin: 1rem;
+        text-align: center;
+        padding: 2rem 4rem 7px 4rem;
+        border-radius: 5px
+    }
+
+    .flex-row-reverse {
+        justify-content: space-evenly;
+    }
+
+    .view-mode-value {
+        padding-right: 44vw;
+        color: hsl(228, 34%, 66%);
+    }
+
+    hr {
+        border-top: 1px solid hsl(228, 28%, 20%);
+        width: 90%;
+    }
+
+    .view-mode-text,
+    .custom-switch {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 0.85rem;
+        padding-right: 20px;
+    }
+}
