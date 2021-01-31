@@ -1,0 +1,19 @@
+.card {
+  text-align: center;
+  margin-top: 20px;
+  color: hsl(237, 18%, 59%);
+  letter-spacing: 0.5rem;
+}
+/* queries for mobile screen */
+@media (max-width: 768px) {
+  .card {
+    font-size: 8px;
+  }
+}
+
+/* queries for tablet and laptop screen */
+@media (min-width: 768px) {
+  .card {
+    font-size: 11px;
+  }
+}
