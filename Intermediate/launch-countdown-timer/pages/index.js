@@ -40,7 +40,7 @@ const Home = () => {
         }}
       >
         <p
-          className="text-center font-bold text-lg px-24 pt-24"
+          className="text-center text-2xl font-bold px-24 pt-24"
           style={{ color: "hsl(0, 0%, 100%)", letterSpacing: ".5rem" }}
         >
           WE'RE LAUNCHING SOON
@@ -53,23 +53,23 @@ const Home = () => {
         </div>
         <div className="flex z-10 fixed justify-center space-x-8 bottom-16 w-full">
           <img
-            className="w-5"
+            className="w-7 mb-5"
             src="images/icon-facebook.svg"
             alt="icon-facebook"
           />
           <img
-            className="w-5"
+            className="w-7 mb-5"
             src="images/icon-pinterest.svg"
             alt="icon-pinterest"
           />
           <img
-            className="w-5"
+            className="w-7 mb-5"
             src="images/icon-instagram.svg"
             alt="icon-instagram"
           />
         </div>
         <img
-          className="fixed z-0 bottom-0 w-full"
+          className="fixed z-0 bottom-0 w-screen"
           src="images/pattern-hills.svg"
           alt="pattern-hills"
         />

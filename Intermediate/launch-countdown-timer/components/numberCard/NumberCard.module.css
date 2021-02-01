@@ -1,19 +1,62 @@
-.card {
+.cardName {
   text-align: center;
   margin-top: 20px;
   color: hsl(237, 18%, 59%);
   letter-spacing: 0.5rem;
 }
+
+.cardValue {
+  font-weight: 700;
+  text-align: center;
+  padding: 1.25rem;
+  color: hsl(345, 95%, 68%);
+}
+
+.upperHalfCard {
+  border-radius: 0.375rem;
+  border-color: black;
+  background-color: hsl(235, 16%, 20%);
+}
+
+.lowerHalfCard {
+  border-radius: 0.375rem;
+  border-color: black;
+  background-color: hsl(236, 21%, 26%);
+  box-shadow: 0px 6px;
+}
+
 /* queries for mobile screen */
 @media (max-width: 768px) {
-  .card {
-    font-size: 8px;
+  .cardName {
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .cardValue {
+    font-size: 9vw;
+    line-height: 3.6rem;
+  }
+
+  .upperHalfCard,
+  .lowerHalfCard {
+    height: 3rem;
+    width: 5rem;
   }
 }
 
 /* queries for tablet and laptop screen */
 @media (min-width: 768px) {
-  .card {
+  .cardName {
     font-size: 11px;
+  }
+
+  .cardValue {
+    font-size: 5rem;
+    line-height: 6.3rem;
+  }
+  .upperHalfCard,
+  .lowerHalfCard {
+    height: 4.3rem;
+    width: 8.5rem;
   }
 }
