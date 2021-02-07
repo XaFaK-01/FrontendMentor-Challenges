@@ -5,7 +5,7 @@ const PickShape = ({ allShapes, setSelectedShapeId }) => {
   return (
     <div
       onClick={console.log("clicked")}
-      className="mt-96 md:mt-72 flex justify-center mx-auto"
+      className="mt-96 flex justify-center mx-auto"
       style={{ width: "80rem" }}
     >
       <div className="relative mx-auto">
@@ -21,7 +21,7 @@ const PickShape = ({ allShapes, setSelectedShapeId }) => {
             setSelectedShapeId={setSelectedShapeId}
           />
         </div>
-        <div className="absolute w-full right-36 md:right-24 top-20 cursor-pointer">
+        <div className="absolute w-full right-36 md:right-28 top-20 cursor-pointer">
           <ShapeTemplate
             shapeData={allShapes[2]}
             setSelectedShapeId={setSelectedShapeId}

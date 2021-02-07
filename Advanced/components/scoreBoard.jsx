@@ -2,6 +2,7 @@ import React from "react"
 
 const ScoreBoard = ({ userScores }) => {
   return (
+    // 74
     <div
       className="border-gray-500 border-3 rounded-2xl px-8 py-6 sm:mt-16 flex justify-between mx-auto"
       style={{ width: "74rem" }}

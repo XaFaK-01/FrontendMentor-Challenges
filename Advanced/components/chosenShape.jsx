@@ -45,8 +45,10 @@ const ChosenShape = ({
         </h3>
       </div>
       <div
-        className={`grid grid-cols-2 md:grid-cols-${
-          showResult ? "3" : "2"
+        className={`grid grid-cols-2 ${
+          showResult && resultStatus.current !== ""
+            ? "md:grid-cols-3"
+            : "md:grid-cols-2"
         } gap-x-16 gap-y-20 mt-16`}
       >
         {showResult && resultStatus.current === "YOU WIN" ? (
@@ -80,7 +82,7 @@ const ChosenShape = ({
         {showSystemCard ? (
           <>
             {showResult && (
-              <div className="col-span-2 md:col-span-1 flex justify-center flex-col order-4 md:order-2">
+              <div className="col-span-2 md:col-span-1 flex justify-center flex-col order-3 md:order-2">
                 <h1 className="text-white text-center font-bold text-9xl md:text-7xl">
                   {resultStatus.current}
                 </h1>
@@ -93,7 +95,7 @@ const ChosenShape = ({
               </div>
             )}
             {showResult && resultStatus.current === "YOU LOSE" ? (
-              <div className="order-3 md:order-2 flex justify-center">
+              <div className="order-2 md:order-3 flex justify-center">
                 <RippleWrapper>
                   <ShapeTemplate
                     shapeData={{
@@ -107,7 +109,7 @@ const ChosenShape = ({
                 </RippleWrapper>
               </div>
             ) : (
-              <div className="order-3 md:order-2 flex justify-center">
+              <div className="order-2 md:order-3 flex justify-center">
                 <ShapeTemplate
                   shapeData={{
                     ...systemChosenShapeData,
@@ -121,7 +123,11 @@ const ChosenShape = ({
             )}
           </>
         ) : (
-          <div className="order-3 flex justify-center">
+          <div
+            className={`${
+              showSystemCard ? "order-2" : "order-3"
+            } flex justify-center`}
+          >
             <BlankShapeTemplate />
           </div>
         )}
