@@ -30,7 +30,7 @@ const Home = ({ countryData, allCountries }) => {
         darkMode && "dark"
       } text-light-mode-text bg-light-mode-background dark:bg-dark-mode-background dark:text-dark-mode-text-and-light-mode-elements`}
     >
-      <div className="px-8 md:px-12 md:py-2 md:pb-80 mt-16 h-full w-full text-light-mode-text bg-light-mode-background dark:bg-dark-mode-background dark:text-dark-mode-text-and-light-mode-elements">
+      <div className="px-8 pb-52 md:px-12 md:py-2 md:pb-96 mt-16 h-full w-full text-light-mode-text bg-light-mode-background dark:bg-dark-mode-background dark:text-dark-mode-text-and-light-mode-elements">
         <PageTitle title={`${countryName}`} />
         <div className="">
           <div className="pt-12 w-32">

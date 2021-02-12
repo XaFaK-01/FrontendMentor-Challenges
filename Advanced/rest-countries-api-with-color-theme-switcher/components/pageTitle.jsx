@@ -8,7 +8,7 @@ export default function PageTitle({ title }) {
     <>
       <Head>
         <title>{title}</title>
-        <link rel="icon" href="/favicon.ico" />
+         <link rel="icon" href="/images/favicon-32x32.png" />
       </Head>
     </>
   )
