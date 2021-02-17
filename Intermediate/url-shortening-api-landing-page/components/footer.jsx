@@ -12,11 +12,11 @@ const Footer = () => {
   return (
     <div className="bg-very-dark-violet-color">
       <Layout>
-        <div className="flex flex-col md:flex-row justify-between ">
+        <div className="flex flex-col md:flex-row justify-between pb-6 md:pb-0 ">
           <h4 className="inline-block text-white text-center md:text-left font-bold text-3xl p-8 md:p-0 md:text-xl w-auto md:w-48">
             Shortly
           </h4>
-          <div className="">
+          <div>
             <h5 className="text-sm text-center md:text-left font-medium my-2 text-white">
               Features
             </h5>
@@ -31,7 +31,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="">
+          <div>
             <h5 className="text-sm text-center md:text-left font-medium my-2 text-white">
               Resources
             </h5>
@@ -46,7 +46,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="">
+          <div>
             <h5 className="text-sm text-center md:text-left font-medium my-2 text-white">
               Company
             </h5>
@@ -64,16 +64,16 @@ const Footer = () => {
             </p>
           </div>
           <div className="mx-auto mt-6 md:mt-2 md:mx-0">
-            <div className="text-white cursor-pointer inline-block mx-2 hover:text-cyan-button-color text-xl">
+            <div className="w-6 md:w-5 text-white cursor-pointer inline-block mx-3 md:mx-2 hover:text-cyan-button-color text-xl">
               <FontAwesomeIcon icon={faFacebookSquare} />
             </div>
-            <div className="text-white cursor-pointer inline-block mx-2 hover:text-cyan-button-color text-xl">
+            <div className="w-6 md:w-5 text-white cursor-pointer inline-block mx-3 md:mx-2 hover:text-cyan-button-color text-xl">
               <FontAwesomeIcon icon={faTwitter} />
             </div>
-            <div className="text-white cursor-pointer inline-block mx-2 hover:text-cyan-button-color text-xl">
+            <div className="w-6 md:w-5 text-white cursor-pointer inline-block mx-3 md:mx-2 hover:text-cyan-button-color text-xl">
               <FontAwesomeIcon icon={faPinterest} />
             </div>
-            <div className="text-white cursor-pointer inline-block mx-2 hover:text-cyan-button-color text-xl">
+            <div className="w-6 md:w-5 text-white cursor-pointer inline-block mx-3 md:mx-2 hover:text-cyan-button-color text-xl">
               <FontAwesomeIcon icon={faInstagram} />
             </div>
           </div>

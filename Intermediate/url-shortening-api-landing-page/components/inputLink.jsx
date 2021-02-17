@@ -12,6 +12,7 @@ const InputLink = ({
     <div className="flex flex-col md:flex-row items-center rounded-md absolute -bottom-6 md:bottom-3 w-full px-10 py-8 my-auto bg-dark-violet-color bg-shorten-mobile bg-no-repeat bg-right-top md:bg-shorten-desktop">
       <div className="flex-1 w-full md:inline-block md:w-10/12 ">
         <input
+          title="URL_to_shrink"
           name="URL_to_shrink"
           className="w-full outline-none px-4 py-3 rounded-md text-sm"
           placeholder="Shorten a link here..."

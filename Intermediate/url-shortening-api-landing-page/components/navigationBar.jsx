@@ -7,7 +7,7 @@ const NavigationBar = () => {
     <>
       <header>
         <div className="grid grid-cols-2 md:block">
-          <img src="/images/logo.svg" className="md:inline-block w-min " />
+          <img src="/images/logo.svg" alt="logo" className="md:inline-block w-min " />
 
           <div
             onClick={() => setShowNavigationBar((prevState) => !prevState)}
