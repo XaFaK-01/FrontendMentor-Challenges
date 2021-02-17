@@ -20,36 +20,28 @@ export default function Home() {
       shortenedUrl: "rebrand.ly/7dvxcsj",
     },
   ])
+  const [fetching, setFetching] = useState(false)
 
   const shortenLinkHandler = async () => {
     setShortenItClicked(true)
-    console.log("shortenLinkHandler clicked")
+    setFetching(true)
 
-    // let linkRequest = {
-    //   destination: originalUrl,
-    //   domain: { fullName: "rebrand.ly" },
-    // }
+    const res = await axios({
+      method: "GET",
+      url: `https://api.shrtco.de/v2/shorten?url=${originalUrl}`,
+    })
 
-    // let requestHeaders = {
-    //   "Content-Type": "application/json",
-    //   apikey: process.env.REBRANDLY_API_KEY,
-    // }
+    if (res) {
+      if (res.data) {
+        setFetching(false)
+      }
+    }
+    let newShortenedUrl = {
+      originalUrl: originalUrl,
+      shortenedUrl: res.data.result.short_link,
+    }
 
-    // const res = await axios({
-    //   method: "POST",
-    //   url: "https://api.rebrandly.com/v1/links",
-    //   data: JSON.stringify(linkRequest),
-    //   headers: requestHeaders,
-    // })
-
-    // let newShortenedUrl = {
-    //   originalUrl: originalUrl,
-    //   shortenedUrl: res.data.shortUrl,
-    // }
-
-    // setShortenedLinks((prevState) => [...prevState, newShortenedUrl])
-
-    console.log(process.env.REBRANDLY_API_KEY)
+    setShortenedLinks((prevState) => [...prevState, newShortenedUrl])
 
     setTimeout(() => {
       setShortenItClicked(false)
@@ -73,6 +65,7 @@ export default function Home() {
               setOriginalUrl={setOriginalUrl}
               shortenLinkHandler={shortenLinkHandler}
               shortenItClicked={shortenItClicked}
+              fetching={fetching}
             />
           </div>
           <ShortenedLink shortenedLinks={shortenedLinks} />

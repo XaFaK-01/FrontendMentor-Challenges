@@ -4,7 +4,7 @@ const IntroductorySection = () => {
   return (
     <div className="grid grid-cols-2 py-12 grid-rows-3">
       <div className="order-2 col-span-2 sm:order-1 sm:col-span-1 row-span-3">
-        <h1 className=" text-4xl md:text-5xl font-bold text-very-dark-violet-color text-center md:text-left md:mt-16">
+        <h1 className="mt-5 text-4xl md:text-5xl font-bold text-very-dark-violet-color text-center md:text-left md:mt-16">
           More than just shorter links
         </h1>
 
