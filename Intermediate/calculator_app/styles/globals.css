@@ -1,0 +1,11 @@
+/* ./styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;700&display=swap");
+* {
+  font-size: 32px;
+  font-weight: 700;
+  font-style: Spartan;
+}
